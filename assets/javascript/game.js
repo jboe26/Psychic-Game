@@ -43,6 +43,7 @@ document.onkeyup = function (event) {
         losses++
         guessesLeft = 10   
         alreadyGuessed = []
+        
     }
 };
 
