@@ -20,11 +20,21 @@ console.log(GuessesSoFarText)
 document.onkeyup = function (event) {
     
     
+    
     // Determines which key was pressed.
     var userGuess = event.key;
     alreadyGuessed.push(userGuess);
     console.log(alreadyGuessed)
     GuessesSoFarText.textContent = alreadyGuessed.join(" ");
+
+    winsText.textContent = winsCount
+
+    lossesText.textContent = losses
+
+
+
+    
+
     
     // Randomly chooses a choice from the options array. Guesses so far and guesses left.
     var computerGuess = wins[Math.floor(Math.random() * wins.length)];
@@ -41,12 +51,12 @@ document.onkeyup = function (event) {
     }
     if  (guessesLeft === 0) {
         losses++
-        guessesLeft = 10   
+        guessesLeft = 10
         alreadyGuessed = []
         
     }
 };
-
+ 
 
 
 
