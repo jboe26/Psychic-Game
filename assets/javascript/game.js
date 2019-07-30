@@ -50,7 +50,7 @@ document.onkeyup = function (event) {
         guessesLeft--;
     }
     if  (guessesLeft === 0) {
-        losses++
+        losses++;
         guessesLeft = 10
         alreadyGuessed = []
         
