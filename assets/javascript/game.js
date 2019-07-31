@@ -16,10 +16,10 @@ var GuessesLeftText = document.getElementById("guesses-left-text");
 var GuessesSoFarText = document.getElementById("guesses");
 console.log(GuessesSoFarText)
 
- // Randomly chooses a choice from the options array. Guesses so far and guesses left.
- var computerGuess = wins[Math.floor(Math.random() * wins.length)];
+// Randomly chooses a choice from the options array. Guesses so far and guesses left.
+var computerGuess = wins[Math.floor(Math.random() * wins.length)];
 
- 
+
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
 
@@ -30,12 +30,13 @@ document.onkeyup = function (event) {
     alreadyGuessed.push(userGuess);
     console.log(alreadyGuessed)
     GuessesSoFarText.textContent = alreadyGuessed.join(" ");
+    GuessesLeftText.textContent = guessesLeft;  
 
     winsText.textContent = winsCount
 
     lossesText.textContent = losses
 
-   
+
     if (userGuess === computerGuess) {
         winsCount++;
         alreadyGuessed = []
@@ -53,5 +54,6 @@ document.onkeyup = function (event) {
 
         console.log(userGuess);
         console.log(computerGuess);
-    
-    }}
+
+    }
+}
