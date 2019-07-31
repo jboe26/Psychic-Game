@@ -19,7 +19,7 @@ console.log(GuessesSoFarText)
 // Randomly chooses a choice from the options array. Guesses so far and guesses left.
 var computerGuess = wins[Math.floor(Math.random() * wins.length)];
 
-
+console.log(computerGuess);
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
 

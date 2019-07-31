@@ -4,6 +4,8 @@ body {
 
 p {
     color: #000;
+    line-height: 2rem;
+    font-size: 20px;
       
 }
 
@@ -11,6 +13,19 @@ p {
     font-family: 'Courier New', Courier, monospace;
     line-height: 25px;
 }
+
+h1 { 
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
 
 
 
